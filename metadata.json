@@ -1,0 +1,30 @@
+{
+  "name": "aix_sys0",
+  "version": "0.1.0",
+  "author": "BashTheStampede",
+  "summary": "Manage AIX sys0",
+  "license": "MIT",
+  "source": "https://github.com/BashTheStampede/aix_sys0.git",
+  "project_page": "https://github.com/BashTheStampede",
+  "issues_url": "https://github.com/BashTheStampede/aix_sys0/issues",
+  "tags": [
+    "sys0",
+    "AIX"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "AIX"
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "3.3.x"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": "3.0"
+    }
+  ],
+  "dependencies": 
+}

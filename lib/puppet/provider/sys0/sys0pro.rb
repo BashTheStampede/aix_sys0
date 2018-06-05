@@ -79,6 +79,16 @@ Puppet::Type.type(:sys0).provide :aix do
   def minpout=(value)
     system('chdev -l sys0 -a minpout='"#{resource[:minpout]}")
   end
+
+  def iostat
+    if getsize("iostat") == resource[:iostat]
+      return resource[:iostat]
+    end
+  end
+  
+  def iostat=(value)
+    system('chdev -l sys0 -a iostat='"#{resource[:minpout]}")
+  end
 end
 
 

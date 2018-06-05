@@ -3,4 +3,5 @@ class aix_sys0::params {
   $max_logname = ''
   $ncargs      = ''
   $maxbuf      = ''
+  $iostat      = ''
 }

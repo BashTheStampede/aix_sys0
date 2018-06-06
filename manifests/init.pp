@@ -20,11 +20,11 @@
 #}
 
 class aix_sys0 (
-  $maxuproc    = aix_sys0::params::maxuproc,
-  $max_logname = aix_sys0::params::max_logname,
-  $ncargs      = aix_sys0::params::ncargs,
-  $maxbuf      = aix_sys0::params::maxbuf,
-  $iostat      = aix_sys0::params::iostat,
+  $maxuproc    = $aix_sys0::params::maxuproc,
+  $max_logname = $aix_sys0::params::max_logname,
+  $ncargs      = $aix_sys0::params::ncargs,
+  $maxbuf      = $aix_sys0::params::maxbuf,
+  $iostat      = $aix_sys0::params::iostat,
 ) inherits aix_sys0::params {
 
   sys0 { 'standard_settings':

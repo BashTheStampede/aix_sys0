@@ -87,7 +87,7 @@ Puppet::Type.type(:sys0).provide :aix do
   end
   
   def iostat=(value)
-    system('chdev -l sys0 -a iostat='"#{resource[:minpout]}")
+    system('chdev -l sys0 -a iostat='"#{resource[:iostat]}")
   end
 end
 

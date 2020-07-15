@@ -2,15 +2,15 @@ require 'pathname'
 
 Puppet::Type.newtype(:sys0) do
 	
-	desc "Manages the tunables for AIX sys0"
+  desc "Manages the tunables for AIX sys0"
 	
-	newparam(:name) do
-		isnamevar
-	end
+  newparam(:name) do
+    isnamevar
+  end
 	
-	newproperty(:maxuproc) do
-		desc "specify the setting for max user processes"
-	end
+  newproperty(:maxuproc) do
+    desc "specify the setting for max user processes"
+  end
   
   newproperty(:max_logname) do
   	desc "specify the max size of login names"
@@ -30,6 +30,10 @@ Puppet::Type.newtype(:sys0) do
   
   newproperty(:minpout) do 
   	desc "Specifies the when programs have reached maxpout can write to a file"
+  end
+
+  newproperty(:iostat) do 
+	desc "Continuously maintain DISK I/O history"
   end
 end
 
